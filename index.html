@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Color Palette</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+    <!-- External Style Sheet -->
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<!-- External Javascript File -->
+    <!-- <script src="index.js"></script> -->
+    
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            
+            <!-- Heading -->
+            <div class="col-lg-12">
+                <h1 class="hedng">Color Palette</h1>
+            </div>
+
+            <!-- Experiment Box -->
+            <div class="col-lg-1 col-md-1 col-sm-0"></div>
+            <div class="col-lg-10 col-md-10 col-sm-12 expt_box" id="box_bg">
+                <div class="text_in_box" id="box_txt"><h1></h1>Welcome to my Color Palette</h1></div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-0"></div>
+
+            <!-- Color Choice -->
+
+            <!-- Backround Colour -->
+            <div class="col-lg-5 col-md-12">
+                <h4>Background Colour</h4>
+                <h5 class="bg_choice">Choose the colour <input type="color" id="bg_color" name="bg_color" value="#6beeff" class="color_chooser"></h5>
+            </div>
+
+            <!-- Swap Button -->
+            <div class="col-lg-2 col-md-12">
+                <button type="button" class="btn btn-dark" onclick="swap_color()">Interchange &#x21C4</button>
+            </div>  
+            
+            <!-- Text Colour -->
+            <div class="col-lg-5 col-md-12">
+                <h4>Text Colour</h4>
+                <h5 class="bg_choice">Choose the colour <input type="color" id="txt_color" name="txt_color" value="#000000" class="color_chooser txt_chooser"></h5>  
+            </div>
+
+            <!-- Apply & Reset Button -->
+            <div class="col-lg-3 col-md-2 col-sm-0"></div>
+
+            <!-- Apply Button -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn btn-outline-success btn-lg ar_btn" onclick="change_all()">Apply</button>
+            </div>  
+
+            <!-- Reset Button -->
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <button type="button" class="btn btn-outline-danger btn-lg ar_btn" onclick="reset()">Reset</button>
+            </div>
+
+            <div class="col-lg-3 col-md-2 col-sm-0"></div>
+
+        </div>
+    </div>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="KD.png" id="logo">
+    </div>
+
+    <!-- External Javascript File -->
+    <script src="index.js"></script>
+
+</body>
+</html>    
